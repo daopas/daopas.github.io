@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Appizy">
+    <title>
+      Appizy App
+    </title>
+    <style>
+        /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+    html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+    }
+
+    body {
+    margin: 0
+    }
+
+    main {
+    display: block
+    }
+
+    h1 {
+    font-size: 2em;
+    margin: 0.67em 0
+    }
+
+    hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+    }
+
+    pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+    }
+
+    a {
+    background-color: transparent
+    }
+
+    abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+    }
+
+    b, strong {
+    font-weight: bolder
+    }
+
+    code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+    }
+
+    small {
+    font-size: 80%
+    }
+
+    sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+    }
+
+    sub {
+    bottom: -0.25em
+    }
+
+    sup {
+    top: -0.5em
+    }
+
+    img {
+    border-style: none
+    }
+
+    button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+    }
+
+    button, input {
+    overflow: visible
+    }
+
+    button, select {
+    text-transform: none
+    }
+
+    [type="button"], [type="reset"], [type="submit"], button {
+    -webkit-appearance: button
+    }
+
+    [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner, button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+    }
+
+    [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring, button:-moz-focusring {
+    outline: 1px dotted ButtonText
+    }
+
+    fieldset {
+    padding: 0.35em 0.75em 0.625em
+    }
+
+    legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+    }
+
+    progress {
+    vertical-align: baseline
+    }
+
+    textarea {
+    overflow: auto
+    }
+
+    [type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+    }
+
+    [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+    height: auto
+    }
+
+    [type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+    }
+
+    [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+    }
+
+    ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+    }
+
+    details {
+    display: block
+    }
+
+    summary {
+    display: list-item
+    }
+
+    template {
+    display: none
+    }
+
+    [hidden] {
+    display: none
+    }
+
+    /* APPIZY */
+    .appizy * {
+    box-sizing: border-box;
+    }
+
+    .appizy {
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    width: 100%;
+    }
+
+    .application-align-center {
+    margin: auto;
+    }
+
+    .application-align-right {
+    margin-left: auto;
+    margin-right: 0;
+    }
+
+    .application-layout-fixed .tabs {
+    overflow-x: auto;
+    }
+
+    .application-layout-fit-parent {
+    width: 100%;
+    }
+
+    .application-layout-fit-parent table {
+    table-layout: auto;
+    width: 100%;
+    }
+
+    .draw-frame {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    }
+
+    .draw-frame-layout-fixed {
+    margin: 0;
+    position: absolute;
+    }
+
+    .draw-frame-layout-fluid,
+    .draw-frame-layout-fit-parent {
+    margin: 10px 0;
+    width: 100%;
+    }
+
+    .chart {
+    background: white;
+    border: 1px solid #ebebeb;
+    }
+
+    table {
+    table-layout: fixed;
+    border: none;
+    border-collapse: collapse;
+    }
+
+    tbody {
+    border: none;
+    }
+
+    tr {
+    min-height: 10px;
+    }
+
+    td {
+    padding: 2px;
+    line-height: normal;
+    }
+
+    td > div {
+    padding: 6px 0;
+    }
+
+    input {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 5px;
+    text-align: inherit;
+    vertical-align: text-bottom;
+    width: 100%;
+    }
+
+    select {
+    font-family: inherit;
+    font-size: inherit;
+    text-align: inherit;
+    width: 100%;
+    }
+
+    p {
+    margin: 0;
+    }
+
+    .in {
+    text-align: right;
+    }
+
+    .in--text {
+    text-align: left;
+    }
+
+    .out {
+    text-align: right;
+    }
+
+    .out--text {
+    text-align: left;
+    }
+
+    .help-text {
+    color: #6c757d;
+    font-size: 0.7rem;
+    margin-top: .25rem;
+    padding: 0;
+    text-align: left;
+    }
+
+    .hidden-cell {
+    display: none;
+    }
+
+    .hidden-row {
+    display: none;
+    }
+
+    textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    resize: none;
+    width: 100%;
+    }
+
+    .btn {
+    background-color: white;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: inherit;
+    }
+
+    .action-bar {
+    border-top: 1px solid #d4d4d1;
+    margin-top: 10px;
+    padding-top: 10px;
+    }
+
+    .tabs {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    position: relative;
+    }
+
+    .tab-content {
+    padding: 0 10px;
+    position: relative;
+    }
+
+    @media print {
+    .action-bar {
+        display: none;
+    }
+    }
+
+        .Heading {
+    font-size: 32px;
+    font-weight: bold;
+    }
+    .Heading_20_1 {
+    font-size: 24px;
+    }
+    .Heading_20_2 {
+    font-size: 16px;
+    }
+    .Note {
+    background-color: #ffffcc;
+    border: 0.74pt solid #808080;
+    color: #333333;
+    font-size: 13px;
+    }
+    .Footnote {
+    color: #808080;
+    font-size: 13px;
+    font-style: italic;
+    }
+    .Hyperlink {
+    color: #0000ee;
+    font-size: 13px;
+    text-decoration: underline;
+    }
+    .Good {
+    background-color: #ccffcc;
+    color: #006600;
+    font-size: 13px;
+    }
+    .Neutral {
+    background-color: #ffffcc;
+    color: #996600;
+    font-size: 13px;
+    }
+    .Bad {
+    background-color: #ffcccc;
+    color: #cc0000;
+    font-size: 13px;
+    }
+    .Warning {
+    color: #cc0000;
+    font-size: 13px;
+    }
+    .Error {
+    background-color: #cc0000;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    }
+    .Accent {
+    font-size: 13px;
+    font-weight: bold;
+    }
+    .Accent_20_1 {
+    color: #ffffff;
+    font-size: 13px;
+    }
+    .Accent_20_2 {
+    color: #ffffff;
+    font-size: 13px;
+    background-color: #808080;
+    }
+    .Accent_20_3 {
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #dddddd;
+    }
+    .Result {
+    font-size: 13px;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    }
+    .Heading1 {
+    background-color: transparent;
+    text-align: center;
+    font-size: 13px;
+    }
+    .Result_20_1 {
+    background-color: transparent;
+    font-size: 13px;
+    text-decoration: underline;
+    }
+    .Result2 {
+    background-color: transparent;
+    font-size: 13px;
+    text-decoration: underline;
+    }
+    .co1 {
+    width: 85px;
+    }
+    .co2 {
+    width: 94px;
+    }
+    .ro1 {
+    height: 17px;
+    }
+    .ro2 {
+    height: 34px;
+    }
+    .ce1 {
+    font-size: 13px;
+    }
+    .P1 {
+    text-align: start;
+    font-size: 24px;
+    }
+    .T1 {
+    font-size: 13px;
+    }
+
+
+                .nav {
+    border-bottom: 1px solid #d4d4d1;
+    padding: 0;
+    margin: 0 0 0 0;
+    }
+
+    .nav li {
+    height: 30px;
+    line-height: 30px;
+    list-style: none;
+    background-color: #ccc;
+    border-top: 1px solid #d4d4d1;
+    border-right: 1px solid #d4d4d1;
+    border-left: 1px solid #d4d4d1;
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+    margin-right: 5px;
+    }
+
+    .nav li.active {
+    position: relative;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    z-index: 5;
+    }
+
+    .nav li a {
+    padding: 10px;
+    color: #595959;
+    text-decoration: none;
+    }
+
+    .nav .active a {
+    color: #000;
+    }
+
+    .tab-content {
+    padding: 0 10px;
+    display: none;
+    }
+
+    .tab-content.active {
+    display: block;
+    }
+
+    @media print {
+    .nav li.active {
+        font-weight: bold;
+    }
+    }            
+    </style>
+  </head>
+  <body>
+    <div class="appizy">
+      <div class="application-layout-fit-parent application-align-left">
+        <div class="application">
+          <ul class="nav">
+            <li class="nav-item active">
+              <a href="#sheet1">Bar</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sheet2">Radar</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sheet3">Lines</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sheet4">Pie</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sheet5">Data</a>
+            </li>
+          </ul>
+          <div class="tabs">
+            <div id="sheet1" class="tab-content active ta1">
+              <table>
+                <colgroup>
+                  <col span="1" class="co1">
+                </colgroup>
+                <tbody>
+                  <tr class="s0r0 ro1">
+                    <td class="s0r0c0 text Default">
+                      <p>
+                        Monthly revenue forecast
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="draw-frame draw-frame-layout-fit-parent">
+                <canvas class="chart" id="chart0"></canvas>
+              </div>
+            </div>
+            <div id="sheet2" class="tab-content ta2">
+              <table>
+                <colgroup>
+                  <col span="1" class="co1">
+                </colgroup>
+                <tbody>
+                  <tr class="s1r0 ro1">
+                    <td class="s1r0c0 text Default">
+                      <p>
+                        Team skills
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="draw-frame draw-frame-layout-fit-parent">
+                <canvas class="chart" id="chart1"></canvas>
+              </div>
+            </div>
+            <div id="sheet3" class="tab-content ta3">
+              <table>
+                <colgroup>
+                  <col span="1" class="co1">
+                </colgroup>
+                <tbody>
+                  <tr class="s2r0 ro1">
+                    <td class="s2r0c0 text Default">
+                      <p>
+                        Annual revenues forecast
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="draw-frame draw-frame-layout-fit-parent">
+                <canvas class="chart" id="chart2"></canvas>
+              </div>
+            </div>
+            <div id="sheet4" class="tab-content ta4">
+              <table>
+                <colgroup>
+                  <col span="1" class="co1">
+                </colgroup>
+                <tbody>
+                  <tr class="s3r0 ro1">
+                    <td class="s3r0c0 text Default">
+                      <p>
+                        My day at work
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="draw-frame draw-frame-layout-fit-parent">
+                <canvas class="chart" id="chart3"></canvas>
+              </div>
+            </div>
+            <div id="sheet5" class="tab-content ta5">
+              <table>
+                <colgroup>
+                  <col span="1" class="co2">
+                  <col span="1" class="co2">
+                  <col span="1" class="co2">
+                  <col span="1" class="co2">
+                  <col span="1" class="co2">
+                </colgroup>
+                <tbody>
+                  <tr class="s4r0 ro2">
+                    <td class="s4r0c0 text ce1"></td>
+                    <td class="s4r0c1 text ce1">
+                      <p>
+                        Planned
+                      </p>
+                    </td>
+                    <td class="s4r0c2 text ce1">
+                      <p>
+                        Done
+                      </p>
+                    </td>
+                    <td class="s4r0c3 text ce1">
+                      <p>
+                        Total planned
+                      </p>
+                    </td>
+                    <td class="s4r0c4 text ce1">
+                      <p>
+                        Total done
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="s4r1 ro1">
+                    <td class="s4r1c0 text ce1">
+                      <p>
+                        January
+                      </p>
+                    </td>
+                    <td class="s4r1c1 in ce1">
+                      <input id="s4r1c1">
+                    </td>
+                    <td class="s4r1c2 out ce1">
+                      <div id="s4r1c2"></div>
+                    </td>
+                    <td class="s4r1c3 out ce1">
+                      <div id="s4r1c3"></div>
+                    </td>
+                    <td class="s4r1c4 out ce1">
+                      <div id="s4r1c4"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r2 ro1">
+                    <td class="s4r2c0 text ce1">
+                      <p>
+                        February
+                      </p>
+                    </td>
+                    <td class="s4r2c1 in ce1">
+                      <input id="s4r2c1">
+                    </td>
+                    <td class="s4r2c2 out ce1">
+                      <div id="s4r2c2"></div>
+                    </td>
+                    <td class="s4r2c3 out ce1">
+                      <div id="s4r2c3"></div>
+                    </td>
+                    <td class="s4r2c4 out ce1">
+                      <div id="s4r2c4"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r3 ro1">
+                    <td class="s4r3c0 text ce1">
+                      <p>
+                        March
+                      </p>
+                    </td>
+                    <td class="s4r3c1 in ce1">
+                      <input id="s4r3c1">
+                    </td>
+                    <td class="s4r3c2 out ce1">
+                      <div id="s4r3c2"></div>
+                    </td>
+                    <td class="s4r3c3 out ce1">
+                      <div id="s4r3c3"></div>
+                    </td>
+                    <td class="s4r3c4 out ce1">
+                      <div id="s4r3c4"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r4 ro1">
+                    <td class="s4r4c0 text ce1">
+                      <p>
+                        April
+                      </p>
+                    </td>
+                    <td class="s4r4c1 in ce1">
+                      <input id="s4r4c1">
+                    </td>
+                    <td class="s4r4c2 out ce1">
+                      <div id="s4r4c2"></div>
+                    </td>
+                    <td class="s4r4c3 out ce1">
+                      <div id="s4r4c3"></div>
+                    </td>
+                    <td class="s4r4c4 out ce1">
+                      <div id="s4r4c4"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r5 ro1">
+                    <td class="s4r5c0 text ce1">
+                      <p>
+                        May
+                      </p>
+                    </td>
+                    <td class="s4r5c1 in ce1">
+                      <input id="s4r5c1">
+                    </td>
+                    <td class="s4r5c2 out ce1">
+                      <div id="s4r5c2"></div>
+                    </td>
+                    <td class="s4r5c3 out ce1">
+                      <div id="s4r5c3"></div>
+                    </td>
+                    <td class="s4r5c4 out ce1">
+                      <div id="s4r5c4"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r6 ro1">
+                    <td class="s4r6c0 text ce1">
+                      <p>
+                        June
+                      </p>
+                    </td>
+                    <td class="s4r6c1 in ce1">
+                      <input id="s4r6c1">
+                    </td>
+                    <td class="s4r6c2 out ce1">
+                      <div id="s4r6c2"></div>
+                    </td>
+                    <td class="s4r6c3 out ce1">
+                      <div id="s4r6c3"></div>
+                    </td>
+                    <td class="s4r6c4 out ce1">
+                      <div id="s4r6c4"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r7 ro1">
+                    <td class="s4r7c0 text ce1">
+                      <p>
+                        July
+                      </p>
+                    </td>
+                    <td class="s4r7c1 in ce1">
+                      <input id="s4r7c1">
+                    </td>
+                    <td class="s4r7c2 out ce1">
+                      <div id="s4r7c2"></div>
+                    </td>
+                    <td class="s4r7c3 out ce1">
+                      <div id="s4r7c3"></div>
+                    </td>
+                    <td class="s4r7c4 out ce1">
+                      <div id="s4r7c4"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r8 ro1">
+                    <td class="s4r8c0 text ce1">
+                      <p>
+                        August
+                      </p>
+                    </td>
+                    <td class="s4r8c1 in ce1">
+                      <input id="s4r8c1">
+                    </td>
+                    <td class="s4r8c2 out ce1">
+                      <div id="s4r8c2"></div>
+                    </td>
+                    <td class="s4r8c3 out ce1">
+                      <div id="s4r8c3"></div>
+                    </td>
+                    <td class="s4r8c4 out ce1">
+                      <div id="s4r8c4"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r9 ro1">
+                    <td class="s4r9c0 text ce1">
+                      <p>
+                        September
+                      </p>
+                    </td>
+                    <td class="s4r9c1 in ce1">
+                      <input id="s4r9c1">
+                    </td>
+                    <td class="s4r9c2 out ce1">
+                      <div id="s4r9c2"></div>
+                    </td>
+                    <td class="s4r9c3 out ce1">
+                      <div id="s4r9c3"></div>
+                    </td>
+                    <td class="s4r9c4 out ce1">
+                      <div id="s4r9c4"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r10 ro1">
+                    <td class="s4r10c0 text ce1">
+                      <p>
+                        October
+                      </p>
+                    </td>
+                    <td class="s4r10c1 in ce1">
+                      <input id="s4r10c1">
+                    </td>
+                    <td class="s4r10c2 out ce1">
+                      <div id="s4r10c2"></div>
+                    </td>
+                    <td class="s4r10c3 out ce1">
+                      <div id="s4r10c3"></div>
+                    </td>
+                    <td class="s4r10c4 out ce1">
+                      <div id="s4r10c4"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r11 ro1">
+                    <td class="s4r11c0 text ce1">
+                      <p>
+                        November
+                      </p>
+                    </td>
+                    <td class="s4r11c1 in ce1">
+                      <input id="s4r11c1">
+                    </td>
+                    <td class="s4r11c2 out ce1">
+                      <div id="s4r11c2"></div>
+                    </td>
+                    <td class="s4r11c3 out ce1">
+                      <div id="s4r11c3"></div>
+                    </td>
+                    <td class="s4r11c4 out ce1">
+                      <div id="s4r11c4"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r12 ro1">
+                    <td class="s4r12c0 text ce1">
+                      <p>
+                        December
+                      </p>
+                    </td>
+                    <td class="s4r12c1 in ce1">
+                      <input id="s4r12c1">
+                    </td>
+                    <td class="s4r12c2 out ce1">
+                      <div id="s4r12c2"></div>
+                    </td>
+                    <td class="s4r12c3 out ce1">
+                      <div id="s4r12c3"></div>
+                    </td>
+                    <td class="s4r12c4 out ce1">
+                      <div id="s4r12c4"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r13 ro1">
+                    <td></td>
+                  </tr>
+                  <tr class="s4r14 ro1">
+                    <td></td>
+                  </tr>
+                  <tr class="s4r15 ro1">
+                    <td class="s4r15c0 text ce1">
+                      <p>
+                        My day
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="s4r16 ro1">
+                    <td class="s4r16c0 text ce1">
+                      <p>
+                        Email
+                      </p>
+                    </td>
+                    <td class="s4r16c1 out ce1">
+                      <div id="s4r16c1"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r17 ro1">
+                    <td class="s4r17c0 text ce1">
+                      <p>
+                        Meeting
+                      </p>
+                    </td>
+                    <td class="s4r17c1 out ce1">
+                      <div id="s4r17c1"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r18 ro1">
+                    <td class="s4r18c0 text ce1">
+                      <p>
+                        Informal talks
+                      </p>
+                    </td>
+                    <td class="s4r18c1 out ce1">
+                      <div id="s4r18c1"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r19 ro1">
+                    <td class="s4r19c0 text ce1">
+                      <p>
+                        Pause
+                      </p>
+                    </td>
+                    <td class="s4r19c1 out ce1">
+                      <div id="s4r19c1"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r20 ro1">
+                    <td class="s4r20c0 text ce1">
+                      <p>
+                        Production
+                      </p>
+                    </td>
+                    <td class="s4r20c1 out ce1">
+                      <div id="s4r20c1"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r21 ro1">
+                    <td></td>
+                  </tr>
+                  <tr class="s4r22 ro1">
+                    <td></td>
+                  </tr>
+                  <tr class="s4r23 ro1">
+                    <td class="s4r23c0 text ce1">
+                      <p>
+                        Skills radar
+                      </p>
+                    </td>
+                    <td class="s4r23c1 text ce1">
+                      <p>
+                        John
+                      </p>
+                    </td>
+                    <td class="s4r23c2 text ce1">
+                      <p>
+                        Jack
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="s4r24 ro1">
+                    <td class="s4r24c0 text ce1">
+                      <p>
+                        Data analysis
+                      </p>
+                    </td>
+                    <td class="s4r24c1 out ce1">
+                      <div id="s4r24c1"></div>
+                    </td>
+                    <td class="s4r24c2 out ce1">
+                      <div id="s4r24c2"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r25 ro1">
+                    <td class="s4r25c0 text ce1">
+                      <p>
+                        Redaction
+                      </p>
+                    </td>
+                    <td class="s4r25c1 out ce1">
+                      <div id="s4r25c1"></div>
+                    </td>
+                    <td class="s4r25c2 out ce1">
+                      <div id="s4r25c2"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r26 ro1">
+                    <td class="s4r26c0 text ce1">
+                      <p>
+                        Management
+                      </p>
+                    </td>
+                    <td class="s4r26c1 out ce1">
+                      <div id="s4r26c1"></div>
+                    </td>
+                    <td class="s4r26c2 out ce1">
+                      <div id="s4r26c2"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r27 ro1">
+                    <td class="s4r27c0 text ce1">
+                      <p>
+                        Presentation
+                      </p>
+                    </td>
+                    <td class="s4r27c1 out ce1">
+                      <div id="s4r27c1"></div>
+                    </td>
+                    <td class="s4r27c2 out ce1">
+                      <div id="s4r27c2"></div>
+                    </td>
+                  </tr>
+                  <tr class="s4r28 ro1">
+                    <td class="s4r28c0 text ce1">
+                      <p>
+                        Sales
+                      </p>
+                    </td>
+                    <td class="s4r28c1 out ce1">
+                      <div id="s4r28c1"></div>
+                    </td>
+                    <td class="s4r28c2 out ce1">
+                      <div id="s4r28c2"></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="action-bar">
+          <button class="btn" onclick="APY.onCalculateButtonClicked()">Calculate</button>
+        </div>
+      </div>
+    </div><!-- Vendor libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js">
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/jstat@1.9.4/dist/jstat.min.js">
+    </script> 
+    <script src="https://cdn.jsdelivr.net/gh/formulajs/formulajs@2.9.0/dist/formula.min.js">
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js">
+    </script> 
+    <script type="application/javascript">
+            
+
+            (function (window) {
+                window.numeral.locale('');
+            })(this);
+    </script> 
+    <script type="application/javascript">
+        (function ($) {
+    var APY = {};
+    APY.cells = {};
+        APY.cells.s0r0c0 = {
+                                    value: 'Monthly\u0020revenue\u0020forecast',
+                                    type: 'text',
+                                    format: ''
+                                };    APY.cells.s1r0c0 = {
+                                    value: 'Team\u0020skills',
+                                    type: 'text',
+                                    format: ''
+                                };    APY.cells.s2r0c0 = {
+                                    value: 'Annual\u0020revenues\u0020forecast',
+                                    type: 'text',
+                                    format: ''
+                                };    APY.cells.s3r0c0 = {
+                                    value: 'My\u0020day\u0020at\u0020work',
+                                    type: 'text',
+                                    format: ''
+                                };    APY.cells.s4r0c1 = {
+                                    value: 'Planned',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                                                            APY.cells.s4r0c2 = {
+                                    value: 'Done',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                                                            APY.cells.s4r0c3 = {
+                                    value: 'Total\u0020planned',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                                                            APY.cells.s4r0c4 = {
+                                    value: 'Total\u0020done',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                                                                                                    APY.cells.s4r1c0 = {
+                                    value: 'January',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r1c1 = {value: 1000,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r1c2 = {value: 560,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r1c3 = {value: 1000,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r1c4 = {value: 560,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r2c0 = {
+                                    value: 'February',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r2c1 = {value: 1000,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r2c2 = {value: 970,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r2c3 = {value: 2000,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r2c4 = {value: 1530,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r3c0 = {
+                                    value: 'March',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r3c1 = {value: 1000,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r3c2 = {value: 1450,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r3c3 = {value: 3000,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r3c4 = {value: 2980,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r4c0 = {
+                                    value: 'April',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r4c1 = {value: 1000,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r4c2 = {value: 730,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r4c3 = {value: 4000,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r4c4 = {value: 3710,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r5c0 = {
+                                    value: 'May',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r5c1 = {value: 1000,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r5c2 = {value: 1300,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r5c3 = {value: 5000,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r5c4 = {value: 5010,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r6c0 = {
+                                    value: 'June',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r6c1 = {value: 1100,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r6c2 = {value: 1144,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r6c3 = {value: 6100,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r6c4 = {value: 6154,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r7c0 = {
+                                    value: 'July',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r7c1 = {value: 1100,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r7c2 = {value: 1144,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r7c3 = {value: 7200,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r7c4 = {value: 7298,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r8c0 = {
+                                    value: 'August',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r8c1 = {value: 1200,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r8c2 = {value: 1056,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r8c3 = {value: 8400,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r8c4 = {value: 8354,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r9c0 = {
+                                    value: 'September',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r9c1 = {value: 900,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r9c2 = {value: 828,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r9c3 = {value: 9300,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r9c4 = {value: 9182,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r10c0 = {
+                                    value: 'October',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r10c1 = {value: 1000,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r10c2 = {value: 740,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r10c3 = {value: 10300,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r10c4 = {value: 9922,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r11c0 = {
+                                    value: 'November',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r11c1 = {value: 1200,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r11c2 = {value: 1776,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r11c3 = {value: 11500,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r11c4 = {value: 11698,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r12c0 = {
+                                    value: 'December',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r12c1 = {value: 1250,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r12c2 = {value: 1137.5,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r12c3 = {value: 12750,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r12c4 = {value: 12835.5,type: 'number',
+                                    format: ''
+                                };                                                                                                                                                                            APY.cells.s4r15c0 = {
+                                    value: 'My\u0020day',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                                                                                                    APY.cells.s4r16c0 = {
+                                    value: 'Email',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r16c1 = {value: 40,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r17c0 = {
+                                    value: 'Meeting',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r17c1 = {value: 39,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r18c0 = {
+                                    value: 'Informal\u0020talks',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r18c1 = {value: 38,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r19c0 = {
+                                    value: 'Pause',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r19c1 = {value: 1,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r20c0 = {
+                                    value: 'Production',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r20c1 = {value: 49,type: 'number',
+                                    format: ''
+                                };                                                                                                                                                                            APY.cells.s4r23c0 = {
+                                    value: 'Skills\u0020radar',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                                                            APY.cells.s4r23c1 = {
+                                    value: 'John',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                                                            APY.cells.s4r23c2 = {
+                                    value: 'Jack',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                                                                                                    APY.cells.s4r24c0 = {
+                                    value: 'Data\u0020analysis',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r24c1 = {value: 0,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r24c2 = {value: 1,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r25c0 = {
+                                    value: 'Redaction',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r25c1 = {value: 2,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r25c2 = {value: 3,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r26c0 = {
+                                    value: 'Management',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r26c1 = {value: 1,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r26c2 = {value: 5,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r27c0 = {
+                                    value: 'Presentation',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r27c1 = {value: 0,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r27c2 = {value: 5,type: 'number',
+                                    format: ''
+                                };                                                                                                                    APY.cells.s4r28c0 = {
+                                    value: 'Sales',
+                                    type: 'text',
+                                    format: ''
+                                };
+                                            APY.cells.s4r28c1 = {value: 1,type: 'number',
+                                    format: ''
+                                };                                            APY.cells.s4r28c2 = {value: 1,type: 'number',
+                                    format: ''
+                                };
+                APY.formulas = {
+                                            s4r1c2: function() { APY.set('s4r1c2',APY.RANGE([4,1,1])+APY.RANGE([4,1,1])*formulajs.RANDBETWEEN(-50,50)/100) },
+                                                        s4r1c3: function() { APY.set('s4r1c3',APY.RANGE([4,1,1])) },
+                                                        s4r1c4: function() { APY.set('s4r1c4',APY.RANGE([4,1,2])) },
+                                                        s4r2c2: function() { APY.set('s4r2c2',APY.RANGE([4,2,1])+APY.RANGE([4,2,1])*formulajs.RANDBETWEEN(-50,50)/100) },
+                                                        s4r2c3: function() { APY.set('s4r2c3',APY.RANGE([4,1,3])+APY.RANGE([4,2,1])) },
+                                                        s4r2c4: function() { APY.set('s4r2c4',APY.RANGE([4,1,4])+APY.RANGE([4,2,2])) },
+                                                        s4r3c2: function() { APY.set('s4r3c2',APY.RANGE([4,3,1])+APY.RANGE([4,3,1])*formulajs.RANDBETWEEN(-50,50)/100) },
+                                                        s4r3c3: function() { APY.set('s4r3c3',APY.RANGE([4,2,3])+APY.RANGE([4,3,1])) },
+                                                        s4r3c4: function() { APY.set('s4r3c4',APY.RANGE([4,2,4])+APY.RANGE([4,3,2])) },
+                                                        s4r4c2: function() { APY.set('s4r4c2',APY.RANGE([4,4,1])+APY.RANGE([4,4,1])*formulajs.RANDBETWEEN(-50,50)/100) },
+                                                        s4r4c3: function() { APY.set('s4r4c3',APY.RANGE([4,3,3])+APY.RANGE([4,4,1])) },
+                                                        s4r4c4: function() { APY.set('s4r4c4',APY.RANGE([4,3,4])+APY.RANGE([4,4,2])) },
+                                                        s4r5c2: function() { APY.set('s4r5c2',APY.RANGE([4,5,1])+APY.RANGE([4,5,1])*formulajs.RANDBETWEEN(-50,50)/100) },
+                                                        s4r5c3: function() { APY.set('s4r5c3',APY.RANGE([4,4,3])+APY.RANGE([4,5,1])) },
+                                                        s4r5c4: function() { APY.set('s4r5c4',APY.RANGE([4,4,4])+APY.RANGE([4,5,2])) },
+                                                        s4r6c2: function() { APY.set('s4r6c2',APY.RANGE([4,6,1])+APY.RANGE([4,6,1])*formulajs.RANDBETWEEN(-50,50)/100) },
+                                                        s4r6c3: function() { APY.set('s4r6c3',APY.RANGE([4,5,3])+APY.RANGE([4,6,1])) },
+                                                        s4r6c4: function() { APY.set('s4r6c4',APY.RANGE([4,5,4])+APY.RANGE([4,6,2])) },
+                                                        s4r7c2: function() { APY.set('s4r7c2',APY.RANGE([4,7,1])+APY.RANGE([4,7,1])*formulajs.RANDBETWEEN(-50,50)/100) },
+                                                        s4r7c3: function() { APY.set('s4r7c3',APY.RANGE([4,6,3])+APY.RANGE([4,7,1])) },
+                                                        s4r7c4: function() { APY.set('s4r7c4',APY.RANGE([4,6,4])+APY.RANGE([4,7,2])) },
+                                                        s4r8c2: function() { APY.set('s4r8c2',APY.RANGE([4,8,1])+APY.RANGE([4,8,1])*formulajs.RANDBETWEEN(-50,50)/100) },
+                                                        s4r8c3: function() { APY.set('s4r8c3',APY.RANGE([4,7,3])+APY.RANGE([4,8,1])) },
+                                                        s4r8c4: function() { APY.set('s4r8c4',APY.RANGE([4,7,4])+APY.RANGE([4,8,2])) },
+                                                        s4r9c2: function() { APY.set('s4r9c2',APY.RANGE([4,9,1])+APY.RANGE([4,9,1])*formulajs.RANDBETWEEN(-50,50)/100) },
+                                                        s4r9c3: function() { APY.set('s4r9c3',APY.RANGE([4,8,3])+APY.RANGE([4,9,1])) },
+                                                        s4r9c4: function() { APY.set('s4r9c4',APY.RANGE([4,8,4])+APY.RANGE([4,9,2])) },
+                                                        s4r10c2: function() { APY.set('s4r10c2',APY.RANGE([4,10,1])+APY.RANGE([4,10,1])*formulajs.RANDBETWEEN(-50,50)/100) },
+                                                        s4r10c3: function() { APY.set('s4r10c3',APY.RANGE([4,9,3])+APY.RANGE([4,10,1])) },
+                                                        s4r10c4: function() { APY.set('s4r10c4',APY.RANGE([4,9,4])+APY.RANGE([4,10,2])) },
+                                                        s4r11c2: function() { APY.set('s4r11c2',APY.RANGE([4,11,1])+APY.RANGE([4,11,1])*formulajs.RANDBETWEEN(-50,50)/100) },
+                                                        s4r11c3: function() { APY.set('s4r11c3',APY.RANGE([4,10,3])+APY.RANGE([4,11,1])) },
+                                                        s4r11c4: function() { APY.set('s4r11c4',APY.RANGE([4,10,4])+APY.RANGE([4,11,2])) },
+                                                        s4r12c2: function() { APY.set('s4r12c2',APY.RANGE([4,12,1])+APY.RANGE([4,12,1])*formulajs.RANDBETWEEN(-50,50)/100) },
+                                                        s4r12c3: function() { APY.set('s4r12c3',APY.RANGE([4,11,3])+APY.RANGE([4,12,1])) },
+                                                        s4r12c4: function() { APY.set('s4r12c4',APY.RANGE([4,11,4])+APY.RANGE([4,12,2])) },
+                                                        s4r16c1: function() { APY.set('s4r16c1',formulajs.RANDBETWEEN(20,100)) },
+                                                        s4r17c1: function() { APY.set('s4r17c1',formulajs.RANDBETWEEN(20,100)) },
+                                                        s4r18c1: function() { APY.set('s4r18c1',formulajs.RANDBETWEEN(20,100)) },
+                                                        s4r19c1: function() { APY.set('s4r19c1',formulajs.RANDBETWEEN(1,10)) },
+                                                        s4r20c1: function() { APY.set('s4r20c1',formulajs.RANDBETWEEN(20,100)) },
+                                                        s4r24c1: function() { APY.set('s4r24c1',formulajs.RANDBETWEEN(0,5)) },
+                                                        s4r24c2: function() { APY.set('s4r24c2',formulajs.RANDBETWEEN(0,5)) },
+                                                        s4r25c1: function() { APY.set('s4r25c1',formulajs.RANDBETWEEN(0,5)) },
+                                                        s4r25c2: function() { APY.set('s4r25c2',formulajs.RANDBETWEEN(0,5)) },
+                                                        s4r26c1: function() { APY.set('s4r26c1',formulajs.RANDBETWEEN(0,5)) },
+                                                        s4r26c2: function() { APY.set('s4r26c2',formulajs.RANDBETWEEN(0,5)) },
+                                                        s4r27c1: function() { APY.set('s4r27c1',formulajs.RANDBETWEEN(0,5)) },
+                                                        s4r27c2: function() { APY.set('s4r27c2',formulajs.RANDBETWEEN(0,5)) },
+                                                        s4r28c1: function() { APY.set('s4r28c1',formulajs.RANDBETWEEN(0,5)) },
+                                                        s4r28c2: function() { APY.set('s4r28c2',formulajs.RANDBETWEEN(0,5)) },
+                            };
+
+        APY.calculate = function () {
+                                        // Step 1
+                                APY.formulas.s4r1c2();
+                                APY.formulas.s4r1c3();
+                                APY.formulas.s4r2c2();
+                                APY.formulas.s4r3c2();
+                                APY.formulas.s4r4c2();
+                                APY.formulas.s4r5c2();
+                                APY.formulas.s4r6c2();
+                                APY.formulas.s4r7c2();
+                                APY.formulas.s4r8c2();
+                                APY.formulas.s4r9c2();
+                                APY.formulas.s4r10c2();
+                                APY.formulas.s4r11c2();
+                                APY.formulas.s4r12c2();
+                                APY.formulas.s4r16c1();
+                                APY.formulas.s4r17c1();
+                                APY.formulas.s4r18c1();
+                                APY.formulas.s4r19c1();
+                                APY.formulas.s4r20c1();
+                                APY.formulas.s4r24c1();
+                                APY.formulas.s4r24c2();
+                                APY.formulas.s4r25c1();
+                                APY.formulas.s4r25c2();
+                                APY.formulas.s4r26c1();
+                                APY.formulas.s4r26c2();
+                                APY.formulas.s4r27c1();
+                                APY.formulas.s4r27c2();
+                                APY.formulas.s4r28c1();
+                                APY.formulas.s4r28c2();
+                                            // Step 2
+                                APY.formulas.s4r1c4();
+                                APY.formulas.s4r2c3();
+                                            // Step 3
+                                APY.formulas.s4r2c4();
+                                APY.formulas.s4r3c3();
+                                            // Step 4
+                                APY.formulas.s4r3c4();
+                                APY.formulas.s4r4c3();
+                                            // Step 5
+                                APY.formulas.s4r4c4();
+                                APY.formulas.s4r5c3();
+                                            // Step 6
+                                APY.formulas.s4r5c4();
+                                APY.formulas.s4r6c3();
+                                            // Step 7
+                                APY.formulas.s4r6c4();
+                                APY.formulas.s4r7c3();
+                                            // Step 8
+                                APY.formulas.s4r7c4();
+                                APY.formulas.s4r8c3();
+                                            // Step 9
+                                APY.formulas.s4r8c4();
+                                APY.formulas.s4r9c3();
+                                            // Step 10
+                                APY.formulas.s4r9c4();
+                                APY.formulas.s4r10c3();
+                                            // Step 11
+                                APY.formulas.s4r10c4();
+                                APY.formulas.s4r11c3();
+                                            // Step 12
+                                APY.formulas.s4r11c4();
+                                APY.formulas.s4r12c3();
+                                            // Step 13
+                                APY.formulas.s4r12c4();
+                                                        APY.updateCharts();
+                                };
+
+    APY.getValue = function (value, type, format) {
+        type = type ? type : 'text';
+        var returnedValue;
+        if (type === 'boolean') {
+            returnedValue = (value === 'true');
+        } else if (type === 'number') {
+            returnedValue = numeral(value).value();
+        } else if (type === 'date') {
+            var m = format ? moment(value, format) : moment(value);
+            if (!!value && m.isValid()) {
+                returnedValue = m.toDate();
+            } else {
+                returnedValue = null;
+            }
+        } else {
+            returnedValue = value;
+        }
+
+        return returnedValue;
+    };
+
+    APY.set = function (cellId, value) {
+        var cell = APY.cells[cellId];
+        if (!cell) {
+            return;
+        }
+
+        cell.value = value;
+
+        var $cell = $('#' + cellId);
+        if ($cell.length === 0) {
+            return;
+        }
+
+        var displayedValue = APY.formatValue(value, cell.type, cell.format);
+        if ($cell.is('div')) {
+            $cell.html(displayedValue);
+            $cell.siblings('input').val(displayedValue);
+        } else {
+            $cell.val(displayedValue);
+        }
+    };
+
+    APY.formatValue = function (value, type, format) {
+        if (value instanceof Error) {
+            return value.toString();
+        }
+
+        if(value === null){
+            formattedValue = '';
+        } else {
+            formattedValue = value + '';
+        }
+
+        if (type === 'number') {
+            if (value === null) {
+                return '';
+            }
+            format = format ? format : '0.[000000000]';
+            value = Math.abs(value) <= 1e-7 ? 0 : value;
+            formattedValue = numeral(value).format(format);
+        }
+
+        if (type === 'date') {
+            if (!value) {
+                return value;
+            }
+
+            formattedValue = moment(value).format(format);
+        }
+
+        return formattedValue;
+    };
+
+    APY.getInputs = function () {
+        var inputs = {};
+        var $applicationInput = $('.application input[type!=hidden], .application select, .application textarea');
+        $applicationInput.each(function () {
+            var cellId = $(this).attr('id');
+            var cell = APY.cells[cellId];
+
+            if (cell) {
+                var value = cell.value;
+
+                if (value instanceof Date) {
+                    value = APY.dateToString(value);
+                }
+
+                inputs[cellId] = {
+                    value: value,
+                    type: cell.type
+                };
+            }
+        });
+
+        return inputs;
+    };
+
+    APY.setInputs = function (data) {
+        Object.keys(data).forEach(function (key) {
+            if (data.hasOwnProperty(key)) {
+                var value = APY.getValue(data[key].value, data[key].type);
+                APY.set(key, value);
+            }
+        });
+    };
+
+    APY.dateToString = function (date) {
+        return date.getFullYear() + '-' +
+            ((date.getMonth() + 1) < 10 ? '0' : '') +
+            (date.getMonth() + 1) + '-' +
+            (date.getDate() < 10 ? '0' : '') +
+            date.getDate() +
+            'T' +
+            (date.getHours() < 10 ? '0' : '') +
+            date.getHours() +
+            ':' +
+            (date.getMinutes() < 10 ? '0' : '') +
+            date.getMinutes() +
+            ':' +
+            (date.getSeconds() < 10 ? '0' : '') +
+            date.getSeconds();
+    };
+
+    APY.RANGE = function () {
+        var value = null;
+        if (arguments.length === 1) {
+            var cellId = 's' + arguments[0][0] + 'r' + arguments[0][1] + 'c' + arguments[0][2];
+
+            if (APY.cells && APY.cells.hasOwnProperty(cellId)) {
+                value = APY.cells[cellId].value;
+            }
+
+            return value;
+        } else if (arguments.length === 2) {
+            var values = [];
+            var head = arguments[0];
+            var tail = arguments[1];
+            for (var i = 0; i <= (tail[1] - head[1]); i++) {
+                var row = [];
+                for (var j = 0; j <= tail[2] - head[2]; j++) {
+                    value = null;
+                    cellId = 's' + head[0] + 'r' + (head[1] + i) + 'c' + (head[2] + j);
+
+                    if (APY.cells && APY.cells.hasOwnProperty(cellId)) {
+                        value = APY.cells[cellId].value;
+                    }
+                    row.push(value);
+                }
+                values.push(row);
+            }
+
+            return values;
+        }
+    };
+
+    APY.onSaveButtonClicked = function () {
+        var blob = new Blob([JSON.stringify(APY.getInputs())], {type: 'application/json'});
+        var fileName = document.title + ' ' + (new Date()).toISOString().slice(0, 10) + '.json';
+        var url = window.URL.createObjectURL(blob);
+
+        if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+            window.navigator.msSaveOrOpenBlob(blob, fileName);
+        } else {
+            var a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+    };
+
+    APY.onDataFileSelected = function () {
+        var file = document.getElementById('data-file');
+        var blob = file.files[0];
+        if (blob) {
+            var reader = new FileReader();
+
+            reader.onload = function (evt) {
+                APY.setInputs(JSON.parse(evt.target.result));
+                APY.calculate();
+            };
+
+            reader.onerror = function (evt) {
+                console.error("An error occurred reading the file", evt);
+            };
+
+            reader.readAsText(blob, "UTF-8");
+        }
+    };
+
+    APY.onCalculateButtonClicked = function () {
+        APY.calculate();
+    };
+
+    APY.onSendButtonClicked = function () {
+        $('form.application').submit();
+    };
+
+    APY.FLAT_RANGE = function () {
+        var range = APY.RANGE.apply(null, arguments);
+        if (Array.isArray(range)) {
+            return [].concat.apply([], range);
+        } else {
+            return range;
+        }
+    };
+
+    APY.CHART_SCATTER_RANGE = function (xRangeStart, xRangeEnd, yRangeStart, yRangeEnd) {
+        var yRangeValues = APY.FLAT_RANGE(yRangeStart, yRangeEnd);
+        var xRangeValues = (xRangeStart && xRangeEnd) ? APY.FLAT_RANGE(xRangeStart, xRangeEnd) : [];
+
+        return yRangeValues.map(function (yValue, index) {
+            var xValue = index;
+            if (xRangeValues.length > 0) {
+                xValue = xRangeValues.length > index ? xRangeValues[index] : null;
+            }
+
+            return {
+                x: xValue,
+                y: yValue
+            }
+        });
+    };
+
+    // Expose Appizy App API called APY :)
+    window.APY = APY;
+
+
+    APY.init =  function () {
+        var $applicationInput = $('.application input[type!=hidden], .application select, .application textarea');
+
+        // Update values in input fields on change
+        $applicationInput.on('change', function () {
+            var cell = APY.cells[$(this).attr('id')];
+            cell.value = APY.getValue($(this).val(), cell.type, cell.format);
+            $(this).val(APY.formatValue(cell.value, cell.type, cell.format));
+
+                    });
+
+        // Display formatted values in input fields on application start
+        $applicationInput.each(function () {
+            var cell = APY.cells[$(this).attr('id')];
+            // Recompute Office value in Javascript value
+            cell.value = APY.getValue(cell.value, cell.type);
+            $(this).val(APY.formatValue(cell.value, cell.type, cell.format));
+        });
+
+        APY.calculate();
+    };
+
+    window.addEventListener('load', APY.init);
+
+    $('form.application').on('submit', function (event) {
+        if (event.keyCode === '13') {
+            event.preventDefault();
+                    }
+    });
+
+            Chart.defaults.font.family =  "'Arial', sans-serif";
+        Chart.defaults.font.size = 14;
+
+                        var ctx = document.getElementById('chart0').getContext('2d')
+
+        var chart0 = new Chart(ctx, {
+            options: {
+                plugins: {
+                                        legend: {
+                        display: true
+                    },
+                },
+                scales: {
+                                                                    x: {
+                            suggestedMin: 0
+                        },
+                        
+                                                'primary-y':{
+                                                        position: 'left',
+                            display: true,
+                            title: {
+                                display: true,
+                                text: ''
+                            },
+                            stacked: false,
+                            suggestedMin: 0,
+                            ticks: {
+                                // Customize ticks: https://www.chartjs.org/docs/latest/samples/scale-options/ticks.html
+                            },
+                        },
+                                                'secondary-y':{
+                                                        grid: {
+                            drawOnChartArea: false // only want the grid lines for one axis to show up
+                            },
+                                                        position: 'right',
+                            display: true,
+                            title: {
+                                display: true,
+                                text: ''
+                            },
+                            stacked: false,
+                            suggestedMin: 0,
+                            ticks: {
+                                // Customize ticks: https://www.chartjs.org/docs/latest/samples/scale-options/ticks.html
+                            },
+                        },
+                                                                                },
+                
+                            },
+            type: 'bar',
+            data: {
+                                labels: APY.FLAT_RANGE([4,1,0],[4,12,0]),
+                                datasets: [
+                                                            {
+                        backgroundColor:"rgba(68, 114, 196, 0.4)",
+                        borderColor:"rgba(68, 114, 196, 0.4)",
+                        showLine: true,
+                        fill: false,
+                        label: APY.FLAT_RANGE([4,0,1],[4,0,1]),
+                        type : 'bar',
+                        data: APY.FLAT_RANGE([4,1,1],[4,12,1]),
+                                                yAxisID: 'primary-y'
+                                            },
+                                                            {
+                        backgroundColor:"rgb(237, 125, 49)",
+                        borderColor:"rgb(237, 125, 49)",
+                        showLine: true,
+                        fill: false,
+                        label: APY.FLAT_RANGE([4,0,2],[4,0,2]),
+                        type : 'line',
+                        data: APY.FLAT_RANGE([4,1,2],[4,12,2]),
+                                                yAxisID: 'secondary-y'
+                                            },
+                                    ]
+            }
+        });
+
+                        var ctx = document.getElementById('chart1').getContext('2d')
+
+        var chart1 = new Chart(ctx, {
+            options: {
+                plugins: {
+                                        legend: {
+                        display: true
+                    },
+                },
+                scales: {
+                                                            r: {
+                        suggestedMin: 0
+                    },
+                                    },
+                
+                            },
+            type: 'radar',
+            data: {
+                                labels: APY.FLAT_RANGE([4,24,0],[4,28,0]),
+                                datasets: [
+                                                            {
+                        backgroundColor:"rgba(112, 173, 71, 0.5)",
+                        borderColor:"rgba(112, 173, 71, 0.5)",
+                        showLine: true,
+                        fill: true,
+                        label: APY.FLAT_RANGE([4,23,1],[4,23,1]),
+                        type : 'radar',
+                        data: APY.FLAT_RANGE([4,24,1],[4,28,1]),
+                                            },
+                                                            {
+                        backgroundColor:"rgba(237, 125, 49, 0.5)",
+                        borderColor:"rgba(237, 125, 49, 0.5)",
+                        showLine: true,
+                        fill: true,
+                        label: APY.FLAT_RANGE([4,23,2],[4,23,2]),
+                        type : 'radar',
+                        data: APY.FLAT_RANGE([4,24,2],[4,28,2]),
+                                            },
+                                    ]
+            }
+        });
+
+                        var ctx = document.getElementById('chart2').getContext('2d')
+
+        var chart2 = new Chart(ctx, {
+            options: {
+                plugins: {
+                                        legend: {
+                        display: true
+                    },
+                },
+                scales: {
+                                                                    x: {
+                            suggestedMin: 0
+                        },
+                        
+                                                'primary-y':{
+                                                        position: 'left',
+                            display: true,
+                            title: {
+                                display: true,
+                                text: ''
+                            },
+                            stacked: false,
+                            suggestedMin: 0,
+                            ticks: {
+                                // Customize ticks: https://www.chartjs.org/docs/latest/samples/scale-options/ticks.html
+                            },
+                        },
+                                                                                },
+                
+                            },
+            type: 'line',
+            data: {
+                                labels: APY.FLAT_RANGE([4,1,0],[4,12,0]),
+                                datasets: [
+                                                            {
+                        backgroundColor:"rgb(68, 114, 196)",
+                        borderColor:"rgb(68, 114, 196)",
+                        showLine: true,
+                        fill: false,
+                        label: APY.FLAT_RANGE([4,0,3],[4,0,3]),
+                        type : 'line',
+                        data: APY.FLAT_RANGE([4,1,3],[4,12,3]),
+                                            },
+                                                            {
+                        backgroundColor:"rgb(237, 125, 49)",
+                        borderColor:"rgb(237, 125, 49)",
+                        showLine: true,
+                        fill: false,
+                        label: APY.FLAT_RANGE([4,0,4],[4,0,4]),
+                        type : 'line',
+                        data: APY.FLAT_RANGE([4,1,4],[4,12,4]),
+                                            },
+                                    ]
+            }
+        });
+
+                        var ctx = document.getElementById('chart3').getContext('2d')
+
+        var chart3 = new Chart(ctx, {
+            options: {
+                plugins: {
+                                        legend: {
+                        display: true
+                    },
+                },
+                scales: {
+                                                        },
+                
+                            },
+            type: 'pie',
+            data: {
+                                labels: APY.FLAT_RANGE([4,16,0],[4,20,0]),
+                                datasets: [
+                                                            {
+                        backgroundColor:["rgb(68, 114, 196)", "rgb(237, 125, 49)", "rgb(165, 165, 165)", "rgb(255, 192, 0)", "rgb(91, 155, 213)"],
+                        borderColor:["rgb(68, 114, 196)", "rgb(237, 125, 49)", "rgb(165, 165, 165)", "rgb(255, 192, 0)", "rgb(91, 155, 213)"],
+                        showLine: true,
+                        fill: false,
+                        label: "Series0",
+                        type : 'pie',
+                        data: APY.FLAT_RANGE([4,16,1],[4,20,1]),
+                                            },
+                                    ]
+            }
+        });
+
+                        APY.updateCharts = function () {
+                                                                chart0.data.labels = APY.FLAT_RANGE([4,1,0],[4,12,0]);
+                                                    chart0.data.datasets[0].data = APY.FLAT_RANGE([4,1,1],[4,12,1]);
+                                    chart0.data.datasets[1].data = APY.FLAT_RANGE([4,1,2],[4,12,2]);
+                                chart0.update();
+                                                                chart1.data.labels = APY.FLAT_RANGE([4,24,0],[4,28,0]);
+                                                    chart1.data.datasets[0].data = APY.FLAT_RANGE([4,24,1],[4,28,1]);
+                                    chart1.data.datasets[1].data = APY.FLAT_RANGE([4,24,2],[4,28,2]);
+                                chart1.update();
+                                                                chart2.data.labels = APY.FLAT_RANGE([4,1,0],[4,12,0]);
+                                                    chart2.data.datasets[0].data = APY.FLAT_RANGE([4,1,3],[4,12,3]);
+                                    chart2.data.datasets[1].data = APY.FLAT_RANGE([4,1,4],[4,12,4]);
+                                chart2.update();
+                                                                chart3.data.labels = APY.FLAT_RANGE([4,16,0],[4,20,0]);
+                                                    chart3.data.datasets[0].data = APY.FLAT_RANGE([4,16,1],[4,20,1]);
+                                chart3.update();
+                    }
+            
+    })(jQuery);
+    </script> 
+    <script>
+            $(document).ready(function () {
+    $(".nav a").click(function (event) {
+        event.preventDefault();
+        $(this).parent().addClass("active");
+        $(this).parent().siblings().removeClass("active");
+
+        var tab = $(this).attr("href");
+        $(".tab-content").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
+    });
+
+    </script>
+  </body>
+</html>
